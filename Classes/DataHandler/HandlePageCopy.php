@@ -38,7 +38,7 @@ final class HandlePageCopy
         int|string $id,
         mixed $value,
         DataHandler $dataHandler,
-        false|mixed $pasteUpdate,
+        mixed $pasteUpdate,
         array &$pasteDataMap,
     ): void {
         if ('copy' !== $command || 'pages' !== $table) {
