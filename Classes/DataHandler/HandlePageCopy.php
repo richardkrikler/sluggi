@@ -33,12 +33,12 @@ final class HandlePageCopy
      * @param array<array-key, mixed> $pasteDataMap
      */
     public function processCmdmap_postProcess(
-        string $command,
+        int|string $command,
         string $table,
-        string|int $id,
-        string|int $value,
+        int|string $id,
+        mixed $value,
         DataHandler $dataHandler,
-        bool $pasteUpdate,
+        false|mixed $pasteUpdate,
         array &$pasteDataMap,
     ): void {
         if ('copy' !== $command || 'pages' !== $table) {
